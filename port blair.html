@@ -1,0 +1,164 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a1 {
+        background-color: aquamarine;
+        display: flex;
+        width: 100%;
+
+    }
+
+
+    .a2 {
+        background-color: rgb(110, 110, 189);
+
+
+    }
+
+    .a3 {
+        background-color: chartreuse;
+    }
+</style>
+
+<body>
+
+  
+
+
+
+    <div style="display: flex; background-color: red;">
+
+        <div onclick="first()" style="background-color: blueviolet; width: 50%;">
+            <div class="a1">
+                <div class="a2">
+                    <input name="abc" type="radio">
+                </div>
+
+                <div class="a3">
+                    <label for="abc">
+
+                        <div class="b1">
+                            <p>1000</p>
+                        </div>
+                        
+                        <div class="b2">
+                            <p>syed bhai</p>
+                        </div>
+                        <div class="b3">
+                            <p>gaurav </p>
+                        </div>
+                        
+                    </label>
+
+
+                </div>
+            </div>
+        </div>
+        <div style="background-color: rgb(43, 226, 64); width: 50%;display: flex;justify-content: center;">
+            <input readonly type="text" style="margin: auto;">
+
+        </div>
+    </div>
+
+    <script>
+
+        function first(){
+            f = 1000
+            document.getElementsByTagName('input')[1].value = f 
+        }
+    </script>
+
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a1 {
+        background-color: aquamarine;
+        display: flex;
+        width: 100%;
+
+    }
+
+
+    .a2 {
+        background-color: rgb(110, 110, 189);
+
+
+    }
+
+    .a3 {
+        background-color: chartreuse;
+    }
+</style>
+
+<body>
+
+
+
+    <div style="display: flex; background-color: red;">
+
+        <div onclick="first()" style="background-color: blueviolet; width: 50%;">
+            <div class="a1">
+                <div class="a2">
+                    <input name="abc" type="radio">
+                </div>
+
+                <div class="a3">
+                    <label for="abc">
+
+                        <div class="b1">
+                            <p>1000</p>
+                        </div>
+                        
+                        <div class="b2">
+                            <p>syed bhai</p>
+                        </div>
+                        <div class="b3">
+                            <p>gaurav </p>
+                        </div>
+                        
+                    </label>
+
+
+                </div>
+            </div>
+        </div>
+        <div style="background-color: rgb(43, 226, 64); width: 50%;display: flex;justify-content: center;">
+            <input readonly type="text" style="margin: auto;">
+
+        </div>
+    </div>
+
+    <script>
+
+        function first(){
+            f = 1000
+            document.getElementsByTagName('input')[1].value = f 
+        }
+
+        // Add event listener to class "a1" to trigger click event on input
+        document.querySelector('.a1').addEventListener('click', function() {
+            // Find the input element and trigger its click event
+            document.querySelector('input[name="abc"]').click();
+        });
+    </script>
+
+</body>
+
+</html>

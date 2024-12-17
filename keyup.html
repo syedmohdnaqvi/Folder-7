@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="loading()">
+    <input type="text" onkeyup="change()">
+
+
+    <script>
+
+        function loading(){
+            alert("Welcome to my Website!")
+        }
+        function change(){
+            a = document.getElementsByTagName('input')[0].value
+
+           answer =  a.toUpperCase()
+
+           document.getElementsByTagName('input')[0].value = answer
+
+        }
+    </script>
+</body>
+</html>

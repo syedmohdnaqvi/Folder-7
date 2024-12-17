@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="sub()">
+        <input type="text" placeholder="Enter Name"  >
+        <input type="text" placeholder="Enter Name" disabled >
+        
+        <input type="text" readonly value="Good morning!"> 
+        <input type="submit">
+    </form>
+
+
+    <script>
+        function sub(){
+          a =   document.getElementsByTagName('input')[0].value
+
+            if(a==""){
+                window.alert("Name must be filled!")
+            }else{
+                window.alert("Form submitted successfully!")
+            }
+        }
+    </script>
+</body>
+</html>

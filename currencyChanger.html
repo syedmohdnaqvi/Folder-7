@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    INR To AED <br><br>
+    INR<input id="in" oninput="ita(value)" type="text"  value="" placeholder="INR">
+<br><br>
+    AED<input type="text" id="out1" placeholder="AED">
+
+
+
+   <br><br>
+
+   AED To INR <br><br>
+    AED<input id="in" oninput="ati(value)" type="text"  value="" placeholder="INR">
+<br><br>
+    INR<input type="text" id="out2" placeholder="AED">
+
+    <script>
+        function ita(value){
+            document.getElementById('out1').value = value/22.66
+        }
+
+
+        function ati(value){
+            document.getElementById('out2').value = value*22.66
+        }
+    </script>
+</body>
+</html>
